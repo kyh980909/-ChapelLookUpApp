@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 int port = 9001;
 
-                Socket sock = new Socket("210.119.129.165", port);
+                Socket sock = new Socket("your IP", port);
 
                 ObjectOutputStream outStream = new ObjectOutputStream(sock.getOutputStream());
                 outStream.writeObject(ID);
